@@ -10,10 +10,10 @@ const galleryImage = document.querySelector('.gallery__item-image');
 const galleryText = document.querySelector('.gallery__item-text');
 
 const images = [
-  { src: '/img/William-Turner.jpg', title: 'William Turner' },
-  { src: '/img/Humphry-Repton.jpg', title: 'Humphry Repton' },
-  { src: '/img/Carlos-de-Haes.jpg', title: 'Carlos De Haes' },
-  { src: '/img/Claude-Lorrain.jpg', title: 'Claude Lorrain' }
+  { src: 'img/William-Turner.jpg', title: 'William Turner' },
+  { src: 'img/Humphry-Repton.jpg', title: 'Humphry Repton' },
+  { src: 'img/Carlos-de-Haes.jpg', title: 'Carlos De Haes' },
+  { src: 'img/Claude-Lorrain.jpg', title: 'Claude Lorrain' }
 ];
 
 let currentImageIndex = 0;
