@@ -139,6 +139,7 @@ form.addEventListener('submit', function(evt) {
           }, 5000);
         }
         else{
+          form.reset();
           submitButton.disabled = false;
           submitButton.style.backgroundColor = originalColor;
           submitButton.textContent = originalText;
