@@ -139,10 +139,10 @@ form.addEventListener('submit', function(evt) {
           }, 5000);
         }
         else{
-          alert("Сообщение не отправлено");
           submitButton.disabled = false;
           submitButton.style.backgroundColor = originalColor;
           submitButton.textContent = originalText;
+          alert("Сообщение не отправлено");
         }
     })
   }
