@@ -65,7 +65,7 @@ body{
   height: 100%;
   border: 5px solid #aec;
   background-size: cover;
-  background-image: url('./img/William-Turner.jpg');
+  background-image: url('../img/William-Turner.jpg');
   transition: transform 0.9s ease-in-out;
 
 }
