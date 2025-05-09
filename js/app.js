@@ -18,6 +18,7 @@ const images = [
 
 let currentImageIndex = 0;
 function handleGalleryPop() {
+  galleryImage.style.backgroundImage = `url(${images[0].src})`;
   galleryItem.addEventListener('click', function (e) {
     openPopup();
   });
