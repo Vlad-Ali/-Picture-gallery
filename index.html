@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="EN-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Picturesque gallery">
+
+  <meta property="og:title" content="Gallery">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://Vlad-Ali.github.io/Picture-gallery">
+  <meta property="og:image" content="/img/favicon.ico">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/img/favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="header">
+  <h1 class="header__title">Gallery</h1>
+</div>
+<div class="time-display" id="current-time"></div>
+<div class="gallery">
+  <div class="gallery__item">
+    <div class="gallery__item-image"></div>
+    <div class="gallery__item-text">William Turner</div>
+  </div>
+</div>
+<div class="gallery-popup">
+  <div class="gallery-popup__content">
+    <button class="gallery-popup__close">&times;</button>
+    <div class="gallery-popup__image-container">
+      <img src="/img/William-Turner.jpg" class="gallery-popup__image">
+    </div>
+    <div class="gallery-popup__text">William Turner</div>
+    <div class="gallery-popup__controls">
+      <button class="gallery-popup__control gallery-popup__control_prev">&larr;</button>
+      <button class="gallery-popup__control gallery-popup__control_next">&rarr;</button>
+    </div>
+  </div>
+</div>
+<div class="form-popup">
+  <div class="popup-content">
+    <button class="close-popup">&times;</button>
+    <form class="contact-me-form" novalidate>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input class="contact-email" type="email" id="email" name="email" placeholder="Enter your email" required>
+        <span class="email-error"></span>
+        <label for="message">Message:</label>
+        <textarea class="contact-message" id="message" name="message" placeholder="Enter your message" required></textarea>
+        <span class="message-error"></span>
+      </div>
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </div>
+</div>
+<div class="form-popup-button-container">
+  <button class="form-popup__button">Fill out the form
+  </button>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+
+</html>
