@@ -1,3 +1,14 @@
+@keyframes change_fill {
+  0% { fill: #49549E; }
+  75% { fill: #1bceb1; }
+  100% { fill: #1bce4f; }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 html, body{
   margin: 0;
   padding: 0;
@@ -23,6 +34,20 @@ body{
   color: firebrick;
   text-align: center;
   font-family: "Anton", sans-serif;
+}
+
+.svg-container{
+  border: 5px solid darkgray;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: mediumaquamarine;
+}
+
+.svg-image:hover{
+  animation: change_fill 2s, rotate 2s;
 }
 
 .time-display {
