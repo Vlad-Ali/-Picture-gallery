@@ -27,6 +27,10 @@ body{
   margin: auto;
 }
 
+.header-sticky{
+  position: sticky;
+}
+
 .header__title{
   margin: auto;
   font-size: 50px;
