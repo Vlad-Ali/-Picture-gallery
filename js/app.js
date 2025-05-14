@@ -17,6 +17,21 @@ const images = [
 ];
 
 let currentImageIndex = 0;
+
+function handleStickyHeader() {
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header');
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition >= 200) {
+      header.classList.add('header-sticky');
+    } else {
+      header.classList.remove('header-sticky');
+    }
+  });
+}
+handleStickyHeader();
+
 function handleGalleryPop() {
   galleryImage.style.backgroundImage = `url(${images[0].src})`;
   galleryItem.addEventListener('click', function (e) {
