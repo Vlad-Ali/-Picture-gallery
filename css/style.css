@@ -50,8 +50,8 @@ body{
   background-color: mediumaquamarine;
 }
 
-.svg-image:hover{
-  animation: change_fill 2s, rotate 2s;
+.svg-image_animating {
+  animation: change_fill 2s, rotate 2s ;
 }
 
 .time-display {
