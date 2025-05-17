@@ -73,7 +73,10 @@ function handleGalleryPop() {
       currentImageIndex--;
       updatePopupContent();
     }
-    updateControls();
+    else if(currentImageIndex === 0) {
+      currentImageIndex = images.length - 1;
+      updatePopupContent();
+    }
   }
 
   function showNextImage() {
@@ -81,7 +84,10 @@ function handleGalleryPop() {
       currentImageIndex++;
       updatePopupContent();
     }
-    updateControls();
+    else if(currentImageIndex === images.length - 1) {
+      currentImageIndex = 0;
+      updatePopupContent();
+    }
   }
 
   function updatePopupContent() {
