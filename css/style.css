@@ -222,14 +222,6 @@ body{
   background: #85a049;
 }
 
-.gallery-popup__control_disabled {
-  background: #e0e0e0;
-  color: #9e9e9e;
-  cursor: not-allowed;
-}
-
-
-
 .contact-me-form{
   display: flex;
   flex-wrap: wrap;
