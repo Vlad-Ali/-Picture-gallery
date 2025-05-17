@@ -113,7 +113,6 @@ function handleGalleryPop() {
     }
   }
   handleGalleryPop();
-  updateControls();
   const form = document.querySelector('.contact-me-form');
   const emailInput = document.querySelector('#email');
   const messageInput = document.querySelector('#message');
