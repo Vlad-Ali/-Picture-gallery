@@ -8,6 +8,7 @@ const popupNext = document.querySelector('.gallery-popup__control_next');
 const galleryItem = document.querySelector('.gallery__item');
 const galleryImage = document.querySelector('.gallery__item-image');
 const galleryText = document.querySelector('.gallery__item-text');
+const svg = document.querySelector('.svg-image');
 
 const images = [
   { src: 'img/William-Turner.jpg', title: 'William Turner' },
@@ -17,6 +18,21 @@ const images = [
 ];
 
 let currentImageIndex = 0;
+
+function handeSvg(){
+  let hasAnimated = false;
+  svg.addEventListener('mouseenter', function(e){
+    if(!hasAnimated){
+      hasAnimated = true;
+      svg.classList.add('svg-image_animating');
+      setTimeout(() =>{
+        hasAnimated = false;
+        svg.classList.remove('svg-image_animating');
+        }, 2000);
+    }
+  })
+}
+handeSvg();
 
 function handleStickyHeader() {
   window.addEventListener('scroll', function() {
